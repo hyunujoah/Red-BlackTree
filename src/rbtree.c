@@ -321,7 +321,7 @@ int rbtree_erase(rbtree *t, node_t *delete)
   return 0;
 }
 
-// 노드 삭제 후 불균형을 잡는  함수
+// 노드를 삭제하고 불균형을 잡아준다
 // `parent`: extra_black이 부여된 노드의 부모
 // `is_left`: extra_black이 부여된 노드가 왼쪽 자식인지 여부
 void rbtree_erase_fixup(rbtree *t, node_t *parent, int is_left)
