@@ -15,7 +15,7 @@ void exchange_color(node_t *a, node_t *b);
 rbtree *new_rbtree(void)
 {
   // tree 구조체 동적 할당
-  // rbtree *t = (rbtree *)calloc(1, sizeof(rbtree));
+  rbtree *t = (rbtree *)calloc(1, sizeof(rbtree));
 
   // nil 노드 생성 및 초기화
   node_t *nil = (node_t *)calloc(1, sizeof(node_t));
@@ -267,7 +267,7 @@ int rbtree_to_array(const rbtree *t, key_t *arr, const size_t n)
 }
 
 
-노드를 삭제하는 함수
+//노드를 삭제하는 함수
 int rbtree_erase(rbtree *t, node_t *delete)
 {
   node_t *remove; // 트리에서 없어질 노드
