@@ -291,7 +291,7 @@ int rbtree_erase(rbtree *t, node_t *delete)
   remove_parent = remove->parent;
 
   // Step 2) remove 노드 제거하기
-  /* [CASE D1]: remove 노드가 루트인 경우 */
+  //remove 노드가 루트인 경우
   if (remove == t->root)
   {
     t->root = replace_node;        // 대체할 노드를 트리의 루트로 지정
